@@ -1,0 +1,16 @@
+{
+  "pathname-content":"post-",
+  "index-post":"-soal-",
+  "related-post":{
+    "status":true,
+    "count":20
+  },
+  "show-post":{
+    "status":true,
+    "count":15
+  },
+  "random-post-in-home":{
+    "status":true,
+    "count":10
+  }
+}
