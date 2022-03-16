@@ -3,7 +3,6 @@ const {ungzip} = require("node-gzip");
 const dir = process.cwd();
 
 module.exports = async (nameFile,id)=>{
-  console.log(keySecret);
   try{
     let val = await fs.readFileSync(dir+"/db/"+nameFile+".zip");
     val = await ungzip(val);
