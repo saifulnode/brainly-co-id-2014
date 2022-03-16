@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="ID" class="h-100">
+   <head>
+      <title>√ ${title}</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta content='${description}' name='description'/>
+      <!-- gsc -->
+      <!-- Facebook Meta Tag -->
+      <meta content='website' property='og:type'/>
+      <meta content="√ ${title}" property='og:title'/>
+      <meta content='${url}' property='og:url'/>
+      <meta content='${description}' property='og:description'/>
+      <meta content='${img}' property='og:image'/>
+      <meta property="article:published_time" content="${time}"/>
+      <meta property="article:modified_time" content="${time}"/>
+      <!-- Twitter Meta Tag-->
+      <meta content='summary_large_image' name='twitter:card'/>
+      <meta content='√ ${title}' name='twitter:title'/>
+      <meta content='${description}' name='twitter:description'/>
+      <meta content='${img}' name='twitter:twitter:image'/>
+      <meta content='√ ${title}' name='twitter:image:alt'/>
+      <!-- meta header -->
+      <meta content='#1877f2' name='msapplication-navbutton-color'/>
+      <meta content='#1877f2' name='apple-mobile-web-app-status-bar-style'/>
+      <meta content='#1877f2' name='theme-color'/>
+      <meta content='IE=Edge' http-equiv='X-UA-Compatible'/>
+      <meta content='true' name='MSSmartTagsPreventParsing'/>
+      <!-- meta seo -->
+      <meta content='all' name='robots'/>
+      <meta content='index, follow' name='googlebot'/>
+      <meta content='follow, all' name='Googlebot-Image'/>
+      <meta name="bingbot" content="index, follow" />
+      <meta content='all' name='MSNBot'/>
+      <meta content='all' name='MSNBot-Media'/>
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "ImageObject",
+           "author": "${author}",
+           "contentUrl": "${img}",
+           "datePublished": "${time}",
+           "description": "${description}",
+           "name": "√ ${title}"
+         }
+      </script>
+      <link rel="canonical" href="${url}" />
+      <!-- js -->
+      <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+      <!-- pwa 
+      <link rel="apple-touch-icon" sizes="57x57" href="https://www.sarmin.id/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="https://www.sarmin.id/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="https://www.sarmin.id/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="https://www.sarmin.id/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="https://www.sarmin.id/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="https://www.sarmin.id/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="https://www.sarmin.id/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="https://www.sarmin.id/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://www.sarmin.id/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="https://www.sarmin.id//android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://www.sarmin.id/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="https://www.sarmin.id/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://www.sarmin.id/favicon-16x16.png">
+      <link rel="manifest" href="https://www.sarmin.id//manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="https://www.sarmin.id/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      -->
+   </head>
+   <body class="container-sm mt-1 d-flex flex-column h-100">
+      <header class="row mb-1" itemscope itemtype="https://schema.org/WebSite">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a itemprop="url" class="navbar-brand mb-0 h1 text-white" href="${url-home}/profil"><div class="h1 firstTitle" itemprop="name">${author}</div></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" aria-current="page" href="${url-home}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="${url-home}/about"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg> About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="${url-home}/contact"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+          </svg> Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="${url-home}/disclaimer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+          </svg> Disclaimer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="${url-home}/privacy-policy"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+            <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
+          </svg> Privacy</a>
+        </li>
+      </ul>
+      <div itemscope itemprop="potentialAction" itemtype="https://schema.org/SearchAction">
+        <meta itemprop="name" content="Kotak Pencarian Artikel"/>
+        <form class="d-flex" method="GET" action="${url-home}/search">
+            <meta itemprop="target" content="${url-home}/search?q={q}"/>
+            <input itemprop="query-input" class="form-control me-2" type="text" autocomplete="off" name="q" required="" spellcheck="false" placeholder="Cari Artikel..." value="" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<div onclick="window.scrollTo({top: 0});" class="backTop" title="scrool ke atas">
+  <svg class="line" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.2498 12C21.2498 6.892 17.1088 2.75 11.9998 2.75C6.89176 2.75 2.74976 6.892 2.74976 12C2.74976 17.108 6.89176 21.25 11.9998 21.25C17.1088 21.25 21.2498 17.108 21.2498 12Z"></path><path class="svg-c" d="M15.4709 13.4423L11.9999 9.95629L8.52895 13.4423"></path></svg>
+</div>
+      </header>
+      <main class="flex-shrink-0 mb-2" itemscope itemtype="https://schema.org/Article">
+         <!-- ads top article -->
+         <div class="row">
+            <div class="col-md-8">
+               <div class="row gy-4 mt-2">
+                  <div class="pb-1 border-bottom">
+                     <h1 itemprop="headline">√ Jika Mobil Ini Sampai Ada Di Indonesia, Para Oknum Petugas Pasti Gigit Jari</h1>
+                     <meta itemprop="dateCreated" content='2015-11-18T08:25:00.000Z'/>
+                     <meta itemprop="dateModified" content='2015-11-18T08:25:00.000Z'/>
+                     <meta itemprop="thumbnailUrl" content='https://www.sarmin.id/image/aHR0cHM6Ly8yLmJwLmJsb2dzcG90LmNvbS8tWmtBdXdHdmVSbkEvVmt3MWd6NEdXSEkvQUFBQUFBQUFEX1EvV2FKTk9kaVBrQzQvczE2MDAvbW9iaWwlMkJ0YW5wYSUyQnBlbmdlbXVkaSUyQmdvb2dsZS5qcGc=.jpg'/>
+                     <meta itemprop="image" content='https://www.sarmin.id/image/aHR0cHM6Ly8yLmJwLmJsb2dzcG90LmNvbS8tWmtBdXdHdmVSbkEvVmt3MWd6NEdXSEkvQUFBQUFBQUFEX1EvV2FKTk9kaVBrQzQvczE2MDAvbW9iaWwlMkJ0YW5wYSUyQnBlbmdlbXVkaSUyQmdvb2dsZS5qcGc=.jpg'/>
+                     <p class="blog-post-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                           <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                           <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                        </svg>
+                        Kamis, 18 November 2015 - 
+                        <meta itemprop="datePublished" content='2015-11-18T08:25:00.000Z'/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+                           <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                           <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                        <span itemscope itemprop="author" itemtype="https://schema.org/CreativeWork">
+                        <a href="https://www.sarmin.id/contact" itemprop="url"><span itemprop="name">SARMIN.ID</span></a>
+                        </span>
+                     </p>
+                     <p class="mt-1">
+                        <span itemscope='' itemtype='https://schema.org/CreativeWorkSeries'>
+                           <meta content='√ Jika Mobil Ini Sampai Ada Di Indonesia, Para Oknum Petugas Pasti Gigit Jari' itemprop='name'/>
+                           <span itemprop='aggregateRating' itemscope='' itemtype='https://schema.org/AggregateRating'>
+                              <span id="rating">
+                                 <meta content='5' itemprop='bestRating'/>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                 </svg>
+                              </span>
+                              <meta itemprop='ratingValue' content='4.9'/>
+                              (<span itemprop='reviewCount'>4100</span>)
+                           </span>
+                        </span>
+                     </p>
+                  </div>
+                  <meta itemprop="abstract" content='Mobil tanpa pengemudi, mobil tanpa pengemudi google, uji coba mobil tanpa pengemudi google, mobil tanpa sopir, mobil tanpa sopir milik google, kecepatan mobil tanpa pengemudi'/>
+                  <article class="blog-post" itemprop="articleBody">
+                       <div> <div>  </div> <div>  </div> <div> <h3> Pada sebuah uji coba <b>mobil tanpa pengemudi</b> terjadi peristiwa yang seandainya terjadi di Indonesia pasti membuat oknum petugas gigit jari </h3> Mengapa ?</div> <div> Sudah menjadi rahasia umum, bahwa di jalan raya, selalu saja ada oknum-oknum petugas yang nakal. Bukannya fokus dan konsentrasi "mengabdikan diri" melaksanakan tugasnya untuk melayani masyarakat yaitu dengan mengatur dan menjaga ketertiban dan keamanan para pengendara di jalan raya, beberapa oknum petugas malah berupaya mencari keuntungan untuk diri sendiri.</div> <div> Karena itulah bukan merupakan hal yang asing ketika terjadi kasus-kasus tilang yang tidak semestinya, yang kemudian ujung-ujungnya diakhiri dengan “perdamaian” ( UUD ).</div> <div> Jika mau “damai”, beres, tilang tak jadi dilanjutkan.</div> <div> <br></div> <div> Yang lebih nakal lagi adalah oknum yang suka menjebak.</div> <div> Menunggu dan memantau dari sebuah tempat yang tersembunyi dari pandangan pengendara, lalu ketika ada pengendara asing dari luar kota yang kurang tahu dengan situasi jalan dan rambu, maka sekonyong-konyong “<i>mak bedhunduk</i>” oknum petugas muncul, lalu tanpa ampun langsung disikatnya.</div> <div> Tilang atau damai .</div> <div> Tapi…, kalau ketanggor dengan mobil yang satu ini pasti gigit jari.</div> <div> <br></div> <div> Sebagaimana diketahui, sebagai raksasa internet, Google ternyata juga memiliki perhatian dan komitment yang cukup tinggi terhadap perkembangan teknologi.</div> <div> Sudah begitu banyak inovasi dan penemuan baru yang dihasilkan oleh Google, terutama pada peralatan yang mempemudah aktivitas hidup manusia.</div> <div> Penemuan-penemuan baru oleh Google ini bahkan kebanyakan bersifat futuristic, maju selangkah dari teknologi yang ada saat ini.</div> <div> Salah satunya adalah <b>mobil tanpa pengemudi</b>.</div> <div> </div> <div> Dikabarkan, sudah cukup lama pihak Google melakukan riset dan pengembangan terhadap sebuah mobil yang dapat melaju di jalan raya meski tanpa pengemudi.</div> <div> <h3> Nah, pada sebuah uji coba terhadap <b>mobil tanpa pengemudi</b> ini terjadi peristiwa yang seandainya terjadi di Indonesia pasti membuat oknum petugas gigit jari.</h3> </div> <div> </div> <div> <amp-img src="https://2.bp.blogspot.com/-ZkAuwGveRnA/Vkw1gz4GWHI/AAAAAAAAD_Q/WaJNOdiPkC4/s1600/mobil%2Btanpa%2Bpengemudi%2Bgoogle.jpg" width="320" height="250" layout="responsive" alt="mobil tanpa pengemudi google"> </amp-img></div> <div> </div> <div> Dalam sebuah uji coba mobil tanpa pengemudi di Mountain View California Amerika Serikat, dengan alasan keselamatan, pihak Google sengaja mensetting agar <b>mobil tanpa sopir</b> yang melaju di jalan raya dengan kecepatan 25 mil per jam.</div> <div> Karena kondisi jalan raya yang memang padat, maka tentu saja kecepatan mobil tanpa pengemudi tersebut termasuk cukup lambat.</div> <div> Akibatnya mobil lain di belakangnya menumpuk. Dan pada akhirnya terjadi kemacetan.</div> <div> <br></div> <div> Karena itu dengan sigap petugas jalan raya di kota besar tersebut buru-buru turun tangan untuk mengatur agar lalu lintas menjadi lancar kembali.</div> <div> <h4> <b>Mobil Google</b> tersebut lalu disemprit. Dipinggirkan dan akan ditilang sebab dianggap menjadi penyebab biang kemacetan lalu lintas, karena melaju sedemikian lambat di jalan raya pada kota sebesar itu.</h4> </div> <div> Namun tentu saja petugas menjadi kecele.</div> <div> Siapa yang mau ditilang ?</div> <div> Wong memang tidak ada sopir alias pengemudinya.</div> <div> Akhirnya, setelah diusut bahwa mobil tanpa pengemudi tersebut sedang melakukan uji coba, maka petugas buru-buru menghubungi pihak Google untuk meminta bantuan segera “mengatasi” mobil tersebut, agar jalan raya tidak menjadi macet lagi.</div> <div> <h3>Nah kalau sampai kejadian disini, oknum pasti gigit jari. Tidak ada tilang, tidak ada “damai”.</h3></div> <div> <br></div> <div> Mobil INI, lebih sangar lagi :</div> <div> <span>&gt; <u>Lihat, ini mobil hantu atau mobil teleportasi ?</u></span></div>  <div>  <div>  <div>  </div> <div> </div>   </div></div></div>
+                  </article>
+               </div>
+            </div>
+            <div class="col-md-4 gy-2">
+               <div class="position-sticky" style="top: 2rem;">
+                  <div class="my-3 p-3 bg-body rounded shadow-sm" itemscope itemtype="https://schema.org/BreadcrumbList">
+                     <h2 class="border-bottom pb-2 mb-2" itemprop="name">Artikel Lainnya</h2>
+                     <ul class="icon-list">
+                        <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="1"/>
+            <meta itemprop="url" content="https://www.sarmin.id/cara-mengembalikan-akun-higgs-domino"/>
+            <a itemprop="item" href="https://www.sarmin.id/cara-mengembalikan-akun-higgs-domino">
+              <h3 class="tCur hovCur h6" itemprop="name">Cara Mengembalikan Akun Higgs Domino Yang Di Hack/ Lupa Password</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="2"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201412pernyataan-pejabat-gedung-putih-ungkap-program-vaksinasi-untuk-kedok-mata-mata.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201412pernyataan-pejabat-gedung-putih-ungkap-program-vaksinasi-untuk-kedok-mata-mata.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Pejabat Gedung Putih Ungkap Program Vaksinasi Untuk Kedok Mata-Mata</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="3"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201503mobile-site-caritau-cara-mudah-memahami-penggunaan-smartphone-untuk-internetan.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201503mobile-site-caritau-cara-mudah-memahami-penggunaan-smartphone-untuk-internetan.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Mobile Site Caritau, Cara Mudah Memahami Penggunaan Smartphone Untuk Internetan</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="4"/>
+            <meta itemprop="url" content="https://www.sarmin.id/cara-mendapatkan-domain-dan-hosting-gratis"/>
+            <a itemprop="item" href="https://www.sarmin.id/cara-mendapatkan-domain-dan-hosting-gratis">
+              <h3 class="tCur hovCur h6" itemprop="name">Nasihosting: Cara Mendapatkan Domain &amp; Hosting Gratis Dari Nasihosting</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="5"/>
+            <meta itemprop="url" content="https://www.sarmin.id/codeigniter-multiple-upload"/>
+            <a itemprop="item" href="https://www.sarmin.id/codeigniter-multiple-upload">
+              <h3 class="tCur hovCur h6" itemprop="name">CI #5 &#x2013; Codeigniter Multiple Upload Full Tutorial</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="6"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201701ulasan-terbaru-tentang-chitika-kelebihan-dan-kekurangan-chitika.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201701ulasan-terbaru-tentang-chitika-kelebihan-dan-kekurangan-chitika.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Ulasan Terbaru Tentang Chitika : Kelebihan dan Kekurangan Chitika</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="7"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201904contoh-prosedur-tinjauan-manajemen-atau-management-review-untuk-dokumen-iso.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201904contoh-prosedur-tinjauan-manajemen-atau-management-review-untuk-dokumen-iso.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Contoh Prosedur Tinjauan Manajemen ( Management Review ) Untuk Dokumen ISO</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="8"/>
+            <meta itemprop="url" content="https://www.sarmin.id/cara-mendownload-video-di-pinterest"/>
+            <a itemprop="item" href="https://www.sarmin.id/cara-mendownload-video-di-pinterest">
+              <h3 class="tCur hovCur h6" itemprop="name">Cara Mendownload Video Di Pinterest Tanpa Aplikasi</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="9"/>
+            <meta itemprop="url" content="https://www.sarmin.id/cara-mengedit-foto-di-lightroom"/>
+            <a itemprop="item" href="https://www.sarmin.id/cara-mengedit-foto-di-lightroom">
+              <h3 class="tCur hovCur h6" itemprop="name">Cara Mengedit Foto Di Lightroom Dengan Rumus Dark Outdoor</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="10"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201610mengapa-4-aplikasi-finansial-ini-disukai-orang-orang-keuangan.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201610mengapa-4-aplikasi-finansial-ini-disukai-orang-orang-keuangan.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Mengapa 4 Aplikasi Finansial Ini Disukai Orang-Orang Keuangan ? Ternyata Ini Penyebabnya</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="11"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201410yang-wajib-dilakukan-sebelum-dan-saat-melakukan-wawancara-pekerjaan.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201410yang-wajib-dilakukan-sebelum-dan-saat-melakukan-wawancara-pekerjaan.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Yang Wajib Dilakukan Sebelum dan Saat Melakukan Wawancara Pekerjaan</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="12"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201505hasil-riset-inilah-7-pekerjaan-yang-paling-membuat-bahagia.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201505hasil-riset-inilah-7-pekerjaan-yang-paling-membuat-bahagia.html">
+              <h3 class="tCur hovCur h6" itemprop="name">7 Pekerjaan Yang Paling Membuat Bahagia Berdasar Hasil Riset</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="13"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201407orang-ini-memasang-rantai-besi-di-lehernya-saat-merayakan-hari-raya-iedul-fitri.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201407orang-ini-memasang-rantai-besi-di-lehernya-saat-merayakan-hari-raya-iedul-fitri.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Orang Ini Memasang Rantai Besi Di Lehernya Saat Merayakan Hari Raya Iedul Fitri</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="14"/>
+            <meta itemprop="url" content="https://www.sarmin.id/bisnis-online"/>
+            <a itemprop="item" href="https://www.sarmin.id/bisnis-online">
+              <h3 class="tCur hovCur h6" itemprop="name">10+ Peluang dan Cara Memulai Bisnis Online tanpa Modal</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="15"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201310cara-praktis-reset-ulang-printer-yang-blinking.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201310cara-praktis-reset-ulang-printer-yang-blinking.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Cara Praktis Reset Ulang Printer Yang Blinking</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="16"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201411unik-berasal-dari-abad-ke-9-masjid-ini-berbentuk-kue-tart-yang-bisa-dinaiki.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201411unik-berasal-dari-abad-ke-9-masjid-ini-berbentuk-kue-tart-yang-bisa-dinaiki.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Masjid Agung Samarra, Masjid Dari Abad 9 Berbentuk Kue Tart Yang Bisa Dinaiki</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="17"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201605kumpulan-soal-tes-kompetensi-dasar-soal-soal-lawan-kata-atau-anonim.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201605kumpulan-soal-tes-kompetensi-dasar-soal-soal-lawan-kata-atau-anonim.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Kumpulan Soal Tes Kompetensi Dasar : Soal-Soal Lawan Kata Atau Antonim</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="18"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201306cara-praktis-memperbaiki-accu-yang-rusak.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201306cara-praktis-memperbaiki-accu-yang-rusak.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Cara Mudah Memperbaiki Accu Yang Rusak</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="19"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201605nggegirisi-4-smartphone-terbaru-ini-memiliki-ram-sebesar-6-gb-plus-spesifikasinya.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201605nggegirisi-4-smartphone-terbaru-ini-memiliki-ram-sebesar-6-gb-plus-spesifikasinya.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Nggegirisi ! 4 Smartphone Terbaru Ini Memiliki RAM Sebesar 6 GB, Plus Spesifikasinya</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="20"/>
+            <meta itemprop="url" content="https://www.sarmin.id/cara-membuat-nomor-halaman-berbeda-di-google-docs"/>
+            <a itemprop="item" href="https://www.sarmin.id/cara-membuat-nomor-halaman-berbeda-di-google-docs">
+              <h3 class="tCur hovCur h6" itemprop="name">Cara Membuat Nomor Halaman Berbeda Di Google Docs</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="21"/>
+            <meta itemprop="url" content="https://www.sarmin.id/bahaya-bug-xmlrpc-bagi-keamanan-wordpress"/>
+            <a itemprop="item" href="https://www.sarmin.id/bahaya-bug-xmlrpc-bagi-keamanan-wordpress">
+              <h3 class="tCur hovCur h6" itemprop="name">Bahaya Bug Xmlrpc.php Bagi Keamanan WordPress</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="22"/>
+            <meta itemprop="url" content="https://www.sarmin.id/apa-itu-cto"/>
+            <a itemprop="item" href="https://www.sarmin.id/apa-itu-cto">
+              <h3 class="tCur hovCur h6" itemprop="name">Merintis Karier Menjadi CTO (Chief Technology Officer) Professional</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="23"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201506inilah-suara-suara-yang-tidak-bisa-didengar-oleh-telinga-manusia.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201506inilah-suara-suara-yang-tidak-bisa-didengar-oleh-telinga-manusia.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Inilah Suara-Suara Yang Tidak Bisa Didengar Oleh Telinga Manusia</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="24"/>
+            <meta itemprop="url" content="https://www.sarmin.id/201407tip-mudik-dengan-kendaraan-pribadi-secara-aman-menjelang-lebaran.html"/>
+            <a itemprop="item" href="https://www.sarmin.id/201407tip-mudik-dengan-kendaraan-pribadi-secara-aman-menjelang-lebaran.html">
+              <h3 class="tCur hovCur h6" itemprop="name">Tip Mudik Dengan Kendaraan Pribadi Secara Aman Menjelang Lebaran</h3>
+            </a>
+          </li>
+          <li class="pb-1 mb-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="25"/>
+            <meta itemprop="url" content="https://www.sarmin.id/situs-kpu-kabupaten-kediri-di-retas-hacker-dan-4-situs-pemerintah-lainnya"/>
+            <a itemprop="item" href="https://www.sarmin.id/situs-kpu-kabupaten-kediri-di-retas-hacker-dan-4-situs-pemerintah-lainnya">
+              <h3 class="tCur hovCur h6" itemprop="name">Situs KPU Kabupaten Kediri Di Retas Hacker ,Dan 4 Situs Pemerintah Lainnya</h3>
+            </a>
+          </li>
+          
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="row footer mt-auto py-3 bg-light rounded">
+         <div class="text-center">
+            <span class="text-muted">Design By <a href="${url-home}">${author}</a>.</span>
+         </div>
+      </footer>
+      <script src="../bootstrap.bundle.min.js"></script>
+      <script src="../core.js"></script>
+<!--       <script>
+        "serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/serviceworker.js").then(e=>{console.log(e)}).catch(e=>{console.log("SW registration failed:",e)})});
+      </script>
+      <script>
+        let dataReplace=[{"aa":"Ilmucoding.com","bb":"SARMIN.ID"},{"aa":"ilmucoding.com","bb":"sarmin.id"},{"aa":"Ilmu Coding","bb":"Sarmin-Id"},{"aa":"www.sekawanmedia.co.id","bb":"www.sarmin.id"},{"aa":"Sekawan Media","bb":"Sarmin-Id"}];
+        document.querySelector("article").querySelectorAll("*").forEach(e=>{e.childNodes&&e.childNodes.forEach(e=>{"#text"==e.nodeName&&dataReplace.forEach(a=>{try{let c=e.data,t=new RegExp(a.aa,"g");e.data=c.replace(t,a.bb)}catch(e){}})})});
+      </script> -->
+
+      
+   </body>
+</html>

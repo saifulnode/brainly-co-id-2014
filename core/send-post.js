@@ -7,7 +7,7 @@ module.exports = async (res,data)=>{
   const id = data.id;
   const name = data["name-file"];
   const category = post.category;
-  const dataRelated = await getRelated(category);
-  //console.log(post,id,name);
+  //const dataRelated = await getRelated(category);
+  console.log(post);
   return res.end("content post");
 };
